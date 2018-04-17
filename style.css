@@ -1,0 +1,200 @@
+/*-----------------------------------------------  General Styles  -----------------------------------------------*/
+body {
+    min-width: 600px;
+    margin: 5%;
+    background-color: #E4DFDA;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+section, footer {
+    margin: 2em 0;
+}
+h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 2em;
+    padding:  1.25em 0 0;
+    clear: both;
+}
+p {
+    margin: 2em auto;
+    padding: 1em 0;
+}
+section p {
+    max-width: 900px;
+}
+.main p {
+    margin: 0;
+    padding: 1.5em 0 0;
+    font-size: 1em;
+}
+.tall p,
+.short p {
+    margin: 0;
+    padding: 0;
+}
+footer p {
+    clear: both;
+    padding: 5em 0 2em;
+}
+span.boxnumber {
+    font-size: 3em;
+    display: block;
+}
+
+.main {
+    width: 600px;
+    text-align: center;
+    margin: 0em auto;
+}
+.tall {
+    width: 150px;
+    height: 350px;
+    padding: 25px;
+}
+.short {
+    width: 150px;
+    height: 150px;
+    padding: 25px;
+}
+
+/*-----------------------------------------------  Floating  -----------------------------------------------*/
+
+/*-----------------------------------------------  Float Sample 1  -----------------------------------------------*/
+#floatsample-1 .tall-container,
+#floatsample-1 .short-container {
+    float: left;
+}
+/*TRY COMMENTING OUT THIS STYLE BELOW TO SEE WHAT HAPPENS*/
+#floatsample-1 p {
+    clear: both;
+}
+/*NOW TRY COMMENTING OUT THIS STYLE BELOW TO SEE WHAT HAPPENS*/
+#floatsample-1 #negative {
+    margin-top: -200px;    /*negative margins are not ideal, but it is one way we can sneak up into this space*/
+}
+/*TRY CHANGING THIS WIDTH TO 1200px TO SEE WHAT HAPPENS, THEN REINSTATE IT BACK TO 600px*/
+#floatsample-1 .main {
+    width: 600px;
+}
+
+/*-----------------------------------------------  Float Sample 2  -----------------------------------------------*/
+
+#floatsample-2 .short-container {
+    float: left;
+}
+#floatsample-2 .short {
+    width: 105px;
+    height: 130px;
+    padding: 5px;
+}
+
+/*TRY CHANGING THE ID TO fs2-block2; TRY COMMENTING OUT THIS STYLE BELOW TO SEE WHAT HAPPENS*/
+#floatsample-2  #fs2-block3 {
+    clear: left;
+}
+#floatsample-2 #fs2-block5,
+#floatsample-2 #fs2-block6 {
+    float: right;
+}
+/*TRY COMMENTING OUT THIS STYLE BELOW TO SEE WHAT HAPPENS*/
+#floatsample-2 #fs2-block6 {
+    clear: right;
+}
+/*TRY COMMENTING OUT THIS STYLE BELOW TO SEE WHAT HAPPENS*/
+#floatsample-2 #fs2-block5 {
+    clear: left;
+}
+
+/*NOW TRY APPLYING THIS STYLE BELOW TO SEE WHAT HAPPENS*/
+/*#floatsample-2 p {
+    clear: both;
+}*/
+
+/*-----------------------------------------------  Float Sample 3  -----------------------------------------------*/
+#floatsample-3 .tall-container,
+#floatsample-3 .short-container {
+    float: left;
+    /*TRY CHANGING THIS TO MARGIN TO 150PX HERE VS WHEN YOU CHANGE IT IN FLOAT 4*/
+    margin: 50px 0;
+}
+#floatsample-3 .tall {
+    width: 125px;
+}
+#floatsample-3 .main {
+    height: 500px;
+    background: yellow;
+}
+/*TRY CHANGING THIS TO FLOAT RIGHT TO SEE WHAT HAPPENS*/
+#floatsample-3  #fs3-block3 {
+    float: left;
+}
+
+/*-----------------------------------------------  Float Sample 4  -----------------------------------------------*/
+#floatsample-4 .tall-container,
+#floatsample-4 .short-container {
+    float: right;
+    /*TRY CHANGING THIS TO MARGIN TO 150PX HERE VS WHEN YOU CHANGE IT IN FLOAT 3*/
+    margin: 50px 0;
+}
+#floatsample-4 .tall {
+    width: 125px;
+}
+#floatsample-4 .main {
+    /*TRY COMMENTING OUT OVERFLOW TO SEE WHAT HAPPENS*/
+    overflow: auto;
+    background: yellow;
+}
+
+/*-----------------------------------------------  Backgrounds  -----------------------------------------------*/
+.main div {
+    background: darkgray;
+}
+.main div:nth-child(even) {
+    background: peachpuff;
+}
+.main div:nth-child(odd) {
+    background: orchid;
+}
+.main div:first-of-type {
+    background: teal;
+}
+.main div:nth-of-type(2) {
+    background: purple;
+}
+.main div:nth-of-type(3) {
+    background: deeppink;
+}
+.main div:nth-of-type(4) {
+    background: firebrick;
+}
+
+.main aside div:nth-child(even) {
+    background: green;
+}
+.main aside div:nth-child(odd) {
+    background: blue;
+}
+.main aside div:first-of-type {
+    background: orange;
+}
+
+.main aside:nth-of-type(2) div:nth-child(even) {
+    background: red;
+}
+.main aside:nth-of-type(2) div:nth-child(odd) {
+    background: yellow;
+}
+.main aside:nth-of-type(2) div:first-of-type {
+    background: mistyrose;
+}
+
+.main aside:nth-of-type(3) div:nth-child(even) {
+    background: lightskyblue;
+}
+.main aside:nth-of-type(3) div:nth-child(odd) {
+    background: lightcoral;
+}
+.main aside:nth-of-type(3) div:first-of-type {
+    background: darkblue;
+}
