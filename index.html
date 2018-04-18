@@ -11,6 +11,107 @@
     <body>
         <section id="floatsample-1">
             <h1>Float Sample 1</h1>
+            <p><em>All three look the same, but see how different CSS techniques are used to achieve the same result. See the comments in the HTML & CSS.</em></p>
+
+            <div class="main">
+                <article id="fs1sample1">    <!-- I'm nesting boxes together here -->
+                    <aside class="short-container">
+                        <div class="short">
+                            <p><span class="boxnumber">1</span>We (1 and 3) are nested together.</p>
+                        </div>
+                        <div class="short">
+                            <p><span class="boxnumber">3</span>We (1 and 3) are nested together.</p>
+                        </div>
+                    </aside>
+
+                    <aside class="short-container">
+                        <div class="short">
+                            <p><span class="boxnumber">2</span>We (2 and 4) are nested together.</p>
+                        </div>
+                        <div class="short">
+                            <p><span class="boxnumber">4</span>We (2 and 4) are nested together.</p>
+                        </div>
+                    </aside>
+                </article>
+
+                <article id="fs1sample2">    <!-- this time I'm not nesting them together, but I've given the container div a fixed width -->
+                    <div class="short-container short">
+                        <p><span class="boxnumber">1</span>We are feeling contrained.</p>
+                    </div>
+                    <div class="short-container short">
+                        <p><span class="boxnumber">2</span>We are feeling constrained.</p>
+                    </div>
+                    <div class="short-container short">
+                        <p><span class="boxnumber">3</span>We are feeling constrained.</p>
+                    </div>
+                    <div class="short-container short">
+                        <p><span class="boxnumber">4</span>We are feeling constrained.</p>
+                    </div>
+                </article>
+
+                <article id="fs1sample3">    <!-- this time I'm not nesting or giving the container div a fixed width -->
+                    <div class="short-container short" id="fs1-block1">
+                        <p><span class="boxnumber">1</span>Box 3 is staying clear.</p>
+                    </div>
+                    <div class="short-container short" id="fs1-block2">
+                        <p><span class="boxnumber">2</span>Box 3 is staying clear..</p>
+                    </div>
+                    <div class="short-container short" id="fs1-block3">
+                        <p><span class="boxnumber">3</span>Box 3 is staying clear.</p>
+                    </div>
+                    <div class="short-container short" id="fs1-block4">
+                        <p><span class="boxnumber">4</span>Box 3 is staying clear.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+
+        <section id="floatsample-2">
+            <h1>Float Sample 2</h1>
+            <p><em>These are setup the same, but... One is styled to float boxes left, and one is styled to float boxes right. One is using a fixed height, and one is using overflow auto. What happens when you change the margin on the boxes? What happens when you comment out overflow? See the comments in the HTML & CSS.</em></p>
+
+            <div class="main">
+                <article id="fs2sample1">
+                    <div class="wrapper">
+                        <div class="short-container short fs2-block1">
+                            <p><span class="boxnumber">1</span>Liquorice dessert dragée cupcake jelly-o soufflé gingerbread cheesecake halvah.</p>
+                        </div>
+
+                        <div class="tall-container tall">
+                            <p><span class="boxnumber">2</span>Pastry topping jelly beans biscuit jelly gingerbread.</p>
+                        </div>
+
+                        <div class="short-container short fs2-block3">
+                            <p><span class="boxnumber">3</span>Cake jelly cake cookie ice cream cookie tiramisu biscuit chocolate cake.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article  id="fs2sample2">
+                    <div class="wrapper">
+                        <div class="short-container short fs2-block1">
+                            <p><span class="boxnumber">1</span>Liquorice dessert dragée cupcake jelly-o soufflé gingerbread cheesecake halvah.</p>
+                        </div>
+
+                        <div class="tall-container tall">
+                            <p><span class="boxnumber">2</span>Pastry topping jelly beans biscuit jelly gingerbread.</p>
+                        </div>
+
+                        <div class="short-container short fs2-block3">
+                            <p><span class="boxnumber">3</span>Cake jelly cake cookie ice cream cookie tiramisu biscuit chocolate cake.</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+
+        <section id="floatsample-3">
+            <h1>Float Sample 3</h1>
             <p><em>What happens when you remove the clear on the paragraph? How does box 6 end up in the empty space? Notice what happens when you increase the main width to 1200px (look closely at boxes 2 and 3 vs 4 and 5). See the comments in the HTML & CSS.</em></p>
 
             <div class="main">
@@ -55,32 +156,34 @@
             </div>
         </section>
 
-        <section id="floatsample-2">
-            <h1>Float Sample 2</h1>
-            <p><em>Float Sample 1 relied on a fixed width for main to keep boxes in three columns. See how this is different. Try removing the clear styles on box 3, 6, then 5. Try applything them to different boxes, like box 2. See the comments in the HTML & CSS.</em></p>
+
+
+        <section id="floatsample-4">
+            <h1>Float Sample 4</h1>
+            <p><em>Float Sample 3 relied on a fixed width for main to keep boxes in three columns. See how this is different. Try removing the clear styles on box 3, 6, then 5. Try applything them to different boxes, like box 2. See the comments in the HTML & CSS.</em></p>
 
             <div class="main">
-                <div class="short-container short" id="fs2-block1">
+                <div class="short-container short" id="fs4-block1">
                     <p><span class="boxnumber">1</span></p>
                 </div>
 
-                <div class="short-container short" id="fs2-block2">
+                <div class="short-container short" id="fs4-block2">
                     <p><span class="boxnumber">2</span></p>
                 </div>
 
-                <div class="short-container short" id="fs2-block3">
+                <div class="short-container short" id="fs4-block3">
                     <p><span class="boxnumber">3</span>Pssst. How am I on a new line?</p>
                 </div>
 
-                <div class="short-container short"  id="fs2-block4">
+                <div class="short-container short"  id="fs4-block4">
                     <p><span class="boxnumber">4</span></p>
                 </div>
 
-                <div class="short-container short" id="fs2-block5">
+                <div class="short-container short" id="fs4-block5">
                     <p><span class="boxnumber">5</span>How am I on a new line &amp; over here?</p>
                 </div>
 
-                <div class="short-container short" id="fs2-block6">
+                <div class="short-container short" id="fs4-block6">
                     <p><span class="boxnumber">6</span>How am I on a new line?</p>
                 </div>
 
@@ -88,44 +191,6 @@
                 <p>I want to stay clear of those floats; otherwise, I'll invade their space. Jujubes bear claw pudding marshmallow lemon drops gingerbread. Candy canes croissant jelly beans cupcake chocolate cake. Halvah ice cream fruitcake bear claw jelly beans. Donut powder muffin gingerbread.</p>
                 <p>Marzipan jelly marshmallow. Tootsie roll pastry wafer marshmallow marshmallow. Tiramisu macaroon chupa chups cheesecake jelly-o. Jelly-o candy canes chupa chups jelly danish cotton candy topping. Soufflé bonbon gummi bears.</p>
                 <p>Icing oat cake jelly-o cake chupa chups bonbon pastry. Chocolate bar caramels soufflé. Donut marzipan caramels cake ice cream.Jelly wafer liquorice muffin muffin tart jelly beans pie.</p>
-            </div>
-        </section>
-
-        <section id="floatsample-3">
-            <h1>Float Sample 3</h1>
-            <p><em>What happens when you float box 3 right?  What happens when you change the margin on the boxes vs in sample 4? See the comments in the HTML & CSS.</em></p>
-
-            <div class="main">
-                <div class="short-container short" id="fs3-block1">
-                    <p><span class="boxnumber">1</span>Liquorice dessert dragée cupcake jelly-o soufflé gingerbread cheesecake halvah.</p>
-                </div>
-
-                <div class="tall-container tall">
-                    <p><span class="boxnumber">2</span>Pastry topping jelly beans biscuit jelly gingerbread.</p>
-                </div>
-
-                <div class="short-container short" id="fs3-block3">
-                    <p><span class="boxnumber">3</span>Cake jelly cake cookie ice cream cookie tiramisu biscuit chocolate cake.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="floatsample-4">
-            <h1>Float Sample 4</h1>
-            <p><em>Just like float sample 3, but floated right and using overflow on main, rather than height. What happens when you change the margin on the boxes vs in sample 3? What happens when you comment out overflow? See the comments in the HTML & CSS.</em></p>
-
-            <div class="main">
-                <div class="short-container short" id="fs4-block1">
-                    <p><span class="boxnumber">1</span>Liquorice dessert dragée cupcake jelly-o soufflé gingerbread cheesecake halvah.</p>
-                </div>
-
-                <div class="tall-container tall">
-                    <p><span class="boxnumber">2</span>Pastry topping jelly beans biscuit jelly gingerbread.</p>
-                </div>
-
-                <div class="short-container short" id="fs4-block3">
-                    <p><span class="boxnumber">3</span>Cake jelly cake cookie ice cream cookie tiramisu biscuit chocolate cake.</p>
-                </div>
             </div>
         </section>
 

@@ -43,10 +43,14 @@ span.boxnumber {
 }
 
 .main {
-    width: 600px;
     text-align: center;
     margin: 0em auto;
 }
+article {
+    display: inline-block;
+    margin: 0 2em;
+}
+
 .tall {
     width: 150px;
     height: 350px;
@@ -61,90 +65,117 @@ span.boxnumber {
 /*-----------------------------------------------  Floating  -----------------------------------------------*/
 
 /*-----------------------------------------------  Float Sample 1  -----------------------------------------------*/
-#floatsample-1 .tall-container,
 #floatsample-1 .short-container {
     float: left;
 }
-/*TRY COMMENTING OUT THIS STYLE BELOW TO SEE WHAT HAPPENS*/
-#floatsample-1 p {
-    clear: both;
-}
-/*NOW TRY COMMENTING OUT THIS STYLE BELOW TO SEE WHAT HAPPENS*/
-#floatsample-1 #negative {
-    margin-top: -200px;    /*negative margins are not ideal, but it is one way we can sneak up into this space*/
-}
-/*TRY CHANGING THIS WIDTH TO 1200px TO SEE WHAT HAPPENS, THEN REINSTATE IT BACK TO 600px*/
-#floatsample-1 .main {
-    width: 600px;
-}
-
-/*-----------------------------------------------  Float Sample 2  -----------------------------------------------*/
-
-#floatsample-2 .short-container {
-    float: left;
-}
-#floatsample-2 .short {
+#floatsample-1 .short {
     width: 105px;
-    height: 130px;
+    height: 125px;
     padding: 5px;
 }
 
-/*TRY CHANGING THE ID TO fs2-block2; TRY COMMENTING OUT THIS STYLE BELOW TO SEE WHAT HAPPENS*/
-#floatsample-2  #fs2-block3 {
-    clear: left;
+/*TRY COMMENTING OUT THIS WIDTH TO SEE WHAT HAPPENS*/
+#floatsample-1 #fs1sample2 {
+    width: 230px;
 }
-#floatsample-2 #fs2-block5,
-#floatsample-2 #fs2-block6 {
-    float: right;
-}
-/*TRY COMMENTING OUT THIS STYLE BELOW TO SEE WHAT HAPPENS*/
-#floatsample-2 #fs2-block6 {
-    clear: right;
-}
-/*TRY COMMENTING OUT THIS STYLE BELOW TO SEE WHAT HAPPENS*/
-#floatsample-2 #fs2-block5 {
+
+/*TRY COMMENTING OUT THIS CLEAR TO SEE WHAT HAPPENS*/
+#floatsample-1 #fs1sample3 #fs1-block3 {
     clear: left;
 }
 
-/*NOW TRY APPLYING THIS STYLE BELOW TO SEE WHAT HAPPENS*/
-/*#floatsample-2 p {
-    clear: both;
-}*/
+/*-----------------------------------------------  Float Sample 2  -----------------------------------------------*/
+#floatsample-2 .wrapper {
+    background: yellow;
+    width: 375px;
+}
+#floatsample-2 #fs2sample1 .tall-container,
+#floatsample-2 #fs2sample1 .short-container {
+    float: left;
+}
+#floatsample-2 #fs2sample2 .tall-container,
+#floatsample-2 #fs2sample2 .short-container {
+    float: right;
+}
+#floatsample-2 .tall,
+#floatsample-2 .short {
+    width: 105px;
+    padding: 5px;
+}
+
+/*TRY CHANGING THIS TO FLOAT RIGHT TO SEE WHAT HAPPENS*/
+#floatsample-2 .fs2-block3 {
+    float: left;
+}
+
+/*SEE THE DIFFERENCE BETWEEN THESE TWO METHODS*/
+#floatsample-2 .tall-container,
+#floatsample-2 .short-container {
+    /*TRY CHANGING THIS TO MARGIN TO 150PX HERE AND SEE THE DIFFERENCE*/
+    margin: 5px 0;
+}
+
+#floatsample-2 #fs2sample1 .wrapper {
+    height: 370px;
+}
+#floatsample-2 #fs2sample2 .wrapper {
+    /*NOW TRY COMMENTING OUT OVERFLOW TO SEE WHAT HAPPENS*/
+    overflow:auto;
+}
 
 /*-----------------------------------------------  Float Sample 3  -----------------------------------------------*/
 #floatsample-3 .tall-container,
 #floatsample-3 .short-container {
     float: left;
-    /*TRY CHANGING THIS TO MARGIN TO 150PX HERE VS WHEN YOU CHANGE IT IN FLOAT 4*/
-    margin: 50px 0;
 }
-#floatsample-3 .tall {
-    width: 125px;
+/*TRY COMMENTING OUT THIS STYLE BELOW TO SEE WHAT HAPPENS*/
+#floatsample-3 p {
+    clear: both;
 }
+/*NOW TRY COMMENTING OUT THIS STYLE BELOW TO SEE WHAT HAPPENS*/
+#floatsample-3 #negative {
+    margin-top: -200px;    /*negative margins are not ideal, but it is one way we can sneak up into this space*/
+}
+/*TRY CHANGING THIS WIDTH TO 1200px TO SEE WHAT HAPPENS, THEN REINSTATE IT BACK TO 600px*/
 #floatsample-3 .main {
-    height: 500px;
-    background: yellow;
-}
-/*TRY CHANGING THIS TO FLOAT RIGHT TO SEE WHAT HAPPENS*/
-#floatsample-3  #fs3-block3 {
-    float: left;
+    width: 600px;
 }
 
 /*-----------------------------------------------  Float Sample 4  -----------------------------------------------*/
-#floatsample-4 .tall-container,
-#floatsample-4 .short-container {
-    float: right;
-    /*TRY CHANGING THIS TO MARGIN TO 150PX HERE VS WHEN YOU CHANGE IT IN FLOAT 3*/
-    margin: 50px 0;
-}
-#floatsample-4 .tall {
-    width: 125px;
-}
 #floatsample-4 .main {
-    /*TRY COMMENTING OUT OVERFLOW TO SEE WHAT HAPPENS*/
-    overflow: auto;
-    background: yellow;
+    width: 600px;
 }
+
+#floatsample-4 .short-container {
+    float: left;
+}
+#floatsample-4 .short {
+    width: 105px;
+    height: 130px;
+    padding: 5px;
+}
+
+/*TRY CHANGING THE ID TO fs4-block2; TRY COMMENTING OUT THIS STYLE BELOW TO SEE WHAT HAPPENS*/
+#floatsample-4  #fs4-block3 {
+    clear: left;
+}
+#floatsample-4 #fs4-block5,
+#floatsample-4 #fs4-block6 {
+    float: right;
+}
+/*TRY COMMENTING OUT THIS STYLE BELOW TO SEE WHAT HAPPENS*/
+#floatsample-4 #fs4-block6 {
+    clear: right;
+}
+/*TRY COMMENTING OUT THIS STYLE BELOW TO SEE WHAT HAPPENS*/
+#floatsample-4 #fs4-block5 {
+    clear: left;
+}
+
+/*NOW TRY APPLYING THIS STYLE BELOW TO SEE WHAT HAPPENS*/
+/*#floatsample-4 p {
+    clear: both;
+}*/
 
 /*-----------------------------------------------  Backgrounds  -----------------------------------------------*/
 .main div {
