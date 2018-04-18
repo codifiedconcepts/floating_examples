@@ -77,6 +77,9 @@ article {
 #floatsample-1 .tall {
     height: 260px;
 }
+#floatsample-1 .long-block {
+    padding: 5px;
+}
 
 /*TRY COMMENTING OUT THIS WIDTH TO SEE WHAT HAPPENS*/
 #floatsample-1 #fs1sample2 {
