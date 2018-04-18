@@ -68,10 +68,14 @@ article {
 #floatsample-1 .short-container {
     float: left;
 }
-#floatsample-1 .short {
+#floatsample-1 .short,
+#floatsample-1 .tall {
     width: 105px;
     height: 125px;
     padding: 5px;
+}
+#floatsample-1 .tall {
+    height: 260px;
 }
 
 /*TRY COMMENTING OUT THIS WIDTH TO SEE WHAT HAPPENS*/
@@ -82,6 +86,15 @@ article {
 /*TRY COMMENTING OUT THIS CLEAR TO SEE WHAT HAPPENS*/
 #floatsample-1 #fs1sample3 #fs1-block3 {
     clear: left;
+}
+
+/*TRY FLOATING THIS RIGHT TO SEE WHAT HAPPENS*/
+#floatsample-1 #fs1sample4 .tall-container {
+    float: left;
+}
+/*TRY COMMENTING OUT THIS WIDTH TO SEE WHAT HAPPENS*/
+#floatsample-1 #fs1sample4 {
+    width: 230px;
 }
 
 /*-----------------------------------------------  Float Sample 2  -----------------------------------------------*/
