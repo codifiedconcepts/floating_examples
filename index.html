@@ -14,7 +14,7 @@
             <p><em>The first three look the same, but see how different CSS techniques are used to achieve the same result. Play with floating and width on the fourth. See the comments in the HTML & CSS.</em></p>
 
             <div class="main">
-                <article id="fs1sample1">    <!-- I'm nesting boxes together here -->
+                <article id="fs1sample1">    <!-- I'm nesting boxes together here; but think about accessibility and source order concerns -->
                     <aside class="short-container">
                         <div class="short">
                             <p><span class="boxnumber">1</span>We (1 and 3) are nested together.</p>
@@ -78,6 +78,23 @@
                     <div class="long-block">
                         <p><span class="boxnumber">4</span>What am I up to?</p>
                     </div>
+                </article>
+
+                <article id="paddingapplication">
+                    <h2>Padding Sidenote</h2>
+                    <aside class="paddingstyle1" id="ps-block1">
+                        <p><span class="boxnumber">1</span>Compare where our padding is applied (1 and 2). Pastry topping jelly beans.</p>
+                    </aside>
+                    <aside class="paddingstyle1" id="ps-block2">
+                        <p><span class="boxnumber">2</span>Compare where our padding is applied (1 and 2).</p>
+                    </aside>
+                    <aside class="paddingstyle2">
+                        <p id="ps-block3"><span class="boxnumber">3</span>Versus where our padding is applied (3 and 4). Pastry topping jelly beans.</p>
+                    </aside>
+                    <aside class="paddingstyle2">
+                        <p id="ps-block4"><span class="boxnumber">4</span>Versus where our padding is applied (3 and 4).</p>
+                    </aside>
+                    <p><em>The same padding is applied, but to two different elements. What happens to the width and height of the boxes as you adjust the padding? Which gives you more control to individually center text in a box?</em></p>
                 </article>
             </div>
         </section>

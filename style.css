@@ -1,14 +1,15 @@
 /*-----------------------------------------------  General Styles  -----------------------------------------------*/
 body {
     min-width: 600px;
-    margin: 5%;
+    margin: 2.5%;
     background-color: #E4DFDA;
     font-family: 'Roboto Condensed', Arial, sans-serif;
     font-size: 1em;
     text-align: center;
 }
 section, footer {
-    margin: 2em 0;
+    max-width: 1400px;
+    margin: 2em auto;
 }
 h1 {
     font-family: 'Righteous', cursive;
@@ -98,6 +99,41 @@ article {
 /*TRY COMMENTING OUT THIS WIDTH TO SEE WHAT HAPPENS*/
 #floatsample-1 #fs1sample4 {
     width: 230px;
+}
+
+/*-----------------------------------------------  Padding Sidenote  -----------------------------------------------*/
+
+#paddingapplication {
+    width: 320px;
+    margin-top: 2em;
+}
+#paddingapplication aside p {
+    margin: 0;
+    padding: 0;
+}
+#paddingapplication p {
+    clear: both;
+}
+#paddingapplication aside {
+    float: left;
+    border: 5px solid royalblue;
+    background: lightblue;
+    width: 140px;
+    height: 160px;
+    padding: 0;
+}
+#paddingapplication aside p {
+    background: mediumslateblue;
+}
+
+
+/*TRY CHANGING THIS PADDING TO 30PX 15PX AND SEE WHAT HAPPENS*/
+#paddingapplication aside.paddingstyle1 {
+    padding: 13px 5px;
+}
+/*TRY CHANGING THIS PADDING TO 30PX 15PX AND SEE WHAT HAPPENS*/
+#paddingapplication aside.paddingstyle2 p {
+    padding: 13px 5px;
 }
 
 /*-----------------------------------------------  Float Sample 2  -----------------------------------------------*/
