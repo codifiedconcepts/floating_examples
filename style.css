@@ -8,7 +8,6 @@ body {
     text-align: center;
 }
 section, footer {
-    max-width: 1400px;
     margin: 2em auto;
 }
 h1 {
@@ -103,16 +102,19 @@ article {
 
 /*-----------------------------------------------  Padding Sidenote  -----------------------------------------------*/
 
+#paddingsidenote h2 {
+    padding: 1.25em 0 0;
+    clear: both;
+}
+#paddingsodenote p {
+    clear: both;
+}
 #paddingapplication {
     width: 320px;
-    margin-top: 2em;
 }
 #paddingapplication aside p {
     margin: 0;
     padding: 0;
-}
-#paddingapplication p {
-    clear: both;
 }
 #paddingapplication aside {
     float: left;
@@ -126,12 +128,11 @@ article {
     background: mediumslateblue;
 }
 
-
-/*TRY CHANGING THIS PADDING TO 30PX 15PX AND SEE WHAT HAPPENS*/
+/*TRY CHANGING THIS PADDING TO 30PX 15PX AND SEE WHAT HAPPENS; WHAT ABOUT WHEN YOU CHANGE IT FROM PADDING TO MARGIN*/
 #paddingapplication aside.paddingstyle1 {
     padding: 13px 5px;
 }
-/*TRY CHANGING THIS PADDING TO 30PX 15PX AND SEE WHAT HAPPENS*/
+/*TRY CHANGING THIS PADDING TO 30PX 15PX AND SEE WHAT HAPPENS; WHAT ABOUT WHEN YOU CHANGE IT FROM PADDING TO MARGIN*/
 #paddingapplication aside.paddingstyle2 p {
     padding: 13px 5px;
 }
