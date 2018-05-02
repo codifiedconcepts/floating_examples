@@ -64,7 +64,6 @@
                     </div>
                 </article>
 
-
                 <article id="fs1sample4">    <!-- this container has a fixed width -->
                     <div class="tall-container tall">
                         <p><span class="boxnumber">1</span>How do I stack up?</p>
@@ -75,12 +74,13 @@
                     <div class="short-container short">
                         <p><span class="boxnumber">3</span>We are feeling constrained.</p>
                     </div>
-                    <div class="long-block">
+                    <div class="long-container">
                         <p><span class="boxnumber">4</span>What am I up to?</p>
                     </div>
                 </article>
             </div>
         </section>
+
 
         <section id="paddingsidenote">
             <h2>Padding Sidenote</h2>
@@ -104,6 +104,53 @@
             </div>
         </section>
 
+
+        <section id="parentvchild">
+            <h2>Parent vs Child</h2>
+            <p><em>This demonstrates floating a parent element vs floating a child element. The first two are structured the same, with a parent half-width div and a child h1 and nav. The difference between them is what is being floated. The third doesn't have a parent element.</em></p>
+            <div class="main">
+                <article id="pvc1">
+                    <div class="half-width">
+                        <h1>Head Full of Dreams</h1>
+                    </div>
+                    <div class="half-width">
+                        <nav>
+                            <ul>
+                                <li>Go Here</li>
+                                <li>No Go Here</li>
+                                <li>I'm the Best</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </article>
+
+                <article id="pvc2">
+                    <div class="half-width">
+                        <h1>Head Full of Dreams</h1>
+                    </div>
+                    <div class="half-width">
+                        <nav>
+                            <ul>
+                                <li>Go Here</li>
+                                <li>No Go Here</li>
+                                <li>I'm the Best</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </article>
+
+                <article id="pvc3">
+                    <h1>Head Full of Dreams</h1>
+                    <nav>
+                        <ul>
+                            <li>Go Here</li>
+                            <li>No Go Here</li>
+                            <li>I'm the Best</li>
+                        </ul>
+                    </nav>
+                </article>
+            </div>
+        </section>
 
 
         <section id="floatsample-2">
